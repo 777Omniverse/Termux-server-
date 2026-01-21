@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FB Messenger Bot</title>
+    <style>
+        body { background:#0f172a; color:white; font-family:Arial; }
+        textarea,input,button { width:100%; margin:6px 0; padding:8px; }
+        button { background:#22c55e; border:none; font-size:16px; }
+        .stop { background:#ef4444; }
+        .box { max-width:600px; margin:auto; padding:20px; }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Facebook Messenger Automation</h2>
+
+    <form method="post">
+        <textarea name="cookies" placeholder="Facebook Cookies" required></textarea>
+        <input name="uid" placeholder="Target UID" required>
+        <textarea name="messages" placeholder="Messages (one per line)" required></textarea>
+        <input name="speed" type="number" value="10">
+
+        <button name="action" value="start">▶ Start Bot</button>
+        <button name="action" value="stop" class="stop">⛔ Stop Bot</button>
+    </form>
+</div>
+</body>
+</html>
